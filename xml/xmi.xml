@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_nsdvgENvEeavkcsFwndrbA" name="model">
+  <eAnnotations xmi:id="_nsdvgUNvEeavkcsFwndrbA" source="genmymodel">
+    <details xmi:id="_nsdvgkNvEeavkcsFwndrbA" key="uuid" value="_eUg00ELDEeavkcsFwndrbA"/>
+    <details xmi:id="_nsdvg0NvEeavkcsFwndrbA" key="author" value="faebuk"/>
+  </eAnnotations>
+  <packageImport xmi:id="_nsdvhENvEeavkcsFwndrbA">
+    <eAnnotations xmi:id="_nsdvhUNvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdvhkNvEeavkcsFwndrbA" key="uuid" value="_eUhb4ELDEeavkcsFwndrbA"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packageImport xmi:id="_nsdvh0NvEeavkcsFwndrbA">
+    <eAnnotations xmi:id="_nsdviENvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdviUNvEeavkcsFwndrbA" key="uuid" value="_eUiC8ELDEeavkcsFwndrbA"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Interface" xmi:id="_nsdvikNvEeavkcsFwndrbA" name="PersonInterface">
+    <eAnnotations xmi:id="_nsdvi0NvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdvjENvEeavkcsFwndrbA" key="uuid" value="_bIixUCTxEDSkPtvK9NxFng"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_nsdvjUNvEeavkcsFwndrbA" name="vorname">
+      <eAnnotations xmi:id="_nsdvjkNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvj0NvEeavkcsFwndrbA" key="uuid" value="_dXf8MCTxEDSkPtvK9NxFng"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_nsdvkENvEeavkcsFwndrbA" name="erzeugeKind">
+      <eAnnotations xmi:id="_nsdvkUNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvkkNvEeavkcsFwndrbA" key="uuid" value="_lGK4ECTxEDSkPtvK9NxFng"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_nsdvk0NvEeavkcsFwndrbA" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_nsdvlENvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvlUNvEeavkcsFwndrbA" key="uuid" value="_lGKRACTxEDSkPtvK9NxFng"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_nsdvlkNvEeavkcsFwndrbA" name="parameter" isUnique="false">
+        <eAnnotations xmi:id="_nsdvl0NvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvmENvEeavkcsFwndrbA" key="uuid" value="_pahSECUFEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_nsdvmUNvEeavkcsFwndrbA" name="testParam" isUnique="false">
+        <eAnnotations xmi:id="_nsdvmkNvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvm0NvEeavkcsFwndrbA" key="uuid" value="_LQjLMCVwEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Interface" xmi:id="_nsdvnENvEeavkcsFwndrbA" name="KindInterface">
+    <eAnnotations xmi:id="_nsdvnUNvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdvnkNvEeavkcsFwndrbA" key="uuid" value="_NojsMCTzEDSmqOt_ViVzmA"/>
+    </eAnnotations>
+    <generalization xmi:id="_nsdvn0NvEeavkcsFwndrbA" general="_nsdvikNvEeavkcsFwndrbA">
+      <eAnnotations xmi:id="_nsdvoENvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvoUNvEeavkcsFwndrbA" key="uuid" value="_RNkrECTzEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+    </generalization>
+    <ownedAttribute xmi:id="_nsdvokNvEeavkcsFwndrbA" name="attr">
+      <eAnnotations xmi:id="_nsdvo0NvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvpENvEeavkcsFwndrbA" key="uuid" value="_XCOxUCTzEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nsdvpUNvEeavkcsFwndrbA" name="testattr">
+      <eAnnotations xmi:id="_nsdvpkNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvp0NvEeavkcsFwndrbA" key="uuid" value="_F0cOYCWdEDSPaeGn1kOruQ"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_nsdvqENvEeavkcsFwndrbA" name="test">
+      <eAnnotations xmi:id="_nsdvqUNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvqkNvEeavkcsFwndrbA" key="uuid" value="_TKCXwCTzEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_nsdvq0NvEeavkcsFwndrbA" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_nsdvrENvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvrUNvEeavkcsFwndrbA" key="uuid" value="_TKBwsCTzEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_nsdvrkNvEeavkcsFwndrbA" name="Fabian">
+    <eAnnotations xmi:id="_nsdvr0NvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdvsENvEeavkcsFwndrbA" key="uuid" value="_WE8F0CT3EDSmqOt_ViVzmA"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_nsdvsUNvEeavkcsFwndrbA" name="vornam">
+      <eAnnotations xmi:id="_nsdvskNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvs0NvEeavkcsFwndrbA" key="uuid" value="_XhgKcCT3EDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_nsdvtENvEeavkcsFwndrbA" name="executeFunc">
+      <eAnnotations xmi:id="_nsdvtUNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvtkNvEeavkcsFwndrbA" key="uuid" value="_jzIh4CT8EDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_nsdvt0NvEeavkcsFwndrbA" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_nsdvuENvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvuUNvEeavkcsFwndrbA" key="uuid" value="_jzH60CT8EDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_nsdvukNvEeavkcsFwndrbA" name="hurai">
+      <eAnnotations xmi:id="_nsdvu0NvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvvENvEeavkcsFwndrbA" key="uuid" value="_GFmWcCUGEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_nsdvvUNvEeavkcsFwndrbA" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_nsdvvkNvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvv0NvEeavkcsFwndrbA" key="uuid" value="_GFlIUCUGEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_nsdvwENvEeavkcsFwndrbA" name="parameter" isUnique="false">
+        <eAnnotations xmi:id="_nsdvwUNvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvwkNvEeavkcsFwndrbA" key="uuid" value="_HK4jgCUGEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#//Char"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_nsdvw0NvEeavkcsFwndrbA" name="test" isUnique="false">
+        <eAnnotations xmi:id="_nsdvxENvEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_nsdvxUNvEeavkcsFwndrbA" key="uuid" value="_SNocoCVxEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#//Date"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_nsdvxkNvEeavkcsFwndrbA" name="MyEnumeration">
+    <eAnnotations xmi:id="_nsdvx0NvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdvyENvEeavkcsFwndrbA" key="uuid" value="_X4cDwCT3EDSmqOt_ViVzmA"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_nsdvyUNvEeavkcsFwndrbA" name="PersonInterface_Fabian" memberEnd="_nsdvzENvEeavkcsFwndrbA _nsdv0UNvEeavkcsFwndrbA" navigableOwnedEnd="_nsdvzENvEeavkcsFwndrbA _nsdv0UNvEeavkcsFwndrbA">
+    <eAnnotations xmi:id="_nsdvykNvEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_nsdvy0NvEeavkcsFwndrbA" key="uuid" value="_gKBBgCV9EDSmqOt_ViVzmA"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_nsdvzENvEeavkcsFwndrbA" name="fabian" type="_nsdvrkNvEeavkcsFwndrbA" association="_nsdvyUNvEeavkcsFwndrbA">
+      <eAnnotations xmi:id="_nsdvzUNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdvzkNvEeavkcsFwndrbA" key="uuid" value="_gJ9XICV9EDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_nsdvz0NvEeavkcsFwndrbA"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsdv0ENvEeavkcsFwndrbA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_nsdv0UNvEeavkcsFwndrbA" name="personInterface" type="_nsdvikNvEeavkcsFwndrbA" association="_nsdvyUNvEeavkcsFwndrbA">
+      <eAnnotations xmi:id="_nsdv0kNvEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_nsdv00NvEeavkcsFwndrbA" key="uuid" value="_gKAacCV9EDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_nsdv1ENvEeavkcsFwndrbA"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsdv1UNvEeavkcsFwndrbA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

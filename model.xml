@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_jf8tAELFEeavkcsFwndrbA" name="model">
+  <eAnnotations xmi:id="_jf8tAULFEeavkcsFwndrbA" source="genmymodel">
+    <details xmi:id="_jf8tAkLFEeavkcsFwndrbA" key="uuid" value="_eUg00ELDEeavkcsFwndrbA"/>
+    <details xmi:id="_jf8tA0LFEeavkcsFwndrbA" key="author" value="faebuk"/>
+  </eAnnotations>
+  <packageImport xmi:id="_jf8tBELFEeavkcsFwndrbA">
+    <eAnnotations xmi:id="_jf8tBULFEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_jf8tBkLFEeavkcsFwndrbA" key="uuid" value="_eUhb4ELDEeavkcsFwndrbA"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packageImport xmi:id="_jf8tB0LFEeavkcsFwndrbA">
+    <eAnnotations xmi:id="_jf8tCELFEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_jf8tCULFEeavkcsFwndrbA" key="uuid" value="_eUiC8ELDEeavkcsFwndrbA"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Interface" xmi:id="_jf8tCkLFEeavkcsFwndrbA" name="PersonInterface">
+    <eAnnotations xmi:id="_jf8tC0LFEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_jf8tDELFEeavkcsFwndrbA" key="uuid" value="_bIixUCTxEDSkPtvK9NxFng"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_jf8tDULFEeavkcsFwndrbA" name="vorname">
+      <eAnnotations xmi:id="_jf8tDkLFEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_jf8tD0LFEeavkcsFwndrbA" key="uuid" value="_dXf8MCTxEDSkPtvK9NxFng"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jf8tEELFEeavkcsFwndrbA" name="erzeugeKind">
+      <eAnnotations xmi:id="_jf8tEULFEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_jf8tEkLFEeavkcsFwndrbA" key="uuid" value="_lGK4ECTxEDSkPtvK9NxFng"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_jf8tE0LFEeavkcsFwndrbA" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_jf8tFELFEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_jf8tFULFEeavkcsFwndrbA" key="uuid" value="_lGKRACTxEDSkPtvK9NxFng"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Interface" xmi:id="_jf8tFkLFEeavkcsFwndrbA" name="KindInterface">
+    <eAnnotations xmi:id="_jf8tF0LFEeavkcsFwndrbA" source="genmymodel">
+      <details xmi:id="_jf8tGELFEeavkcsFwndrbA" key="uuid" value="_NojsMCTzEDSmqOt_ViVzmA"/>
+    </eAnnotations>
+    <generalization xmi:id="_jf8tGULFEeavkcsFwndrbA" general="_jf8tCkLFEeavkcsFwndrbA">
+      <eAnnotations xmi:id="_jf8tGkLFEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_jf8tG0LFEeavkcsFwndrbA" key="uuid" value="_RNkrECTzEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+    </generalization>
+    <ownedAttribute xmi:id="_jf8tHELFEeavkcsFwndrbA" name="attr">
+      <eAnnotations xmi:id="_jf8tHULFEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_jf8tHkLFEeavkcsFwndrbA" key="uuid" value="_XCOxUCTzEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jf8tH0LFEeavkcsFwndrbA" name="test">
+      <eAnnotations xmi:id="_jf9UEELFEeavkcsFwndrbA" source="genmymodel">
+        <details xmi:id="_jf9UEULFEeavkcsFwndrbA" key="uuid" value="_TKCXwCTzEDSmqOt_ViVzmA"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_jf9UEkLFEeavkcsFwndrbA" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_jf9UE0LFEeavkcsFwndrbA" source="genmymodel">
+          <details xmi:id="_jf9UFELFEeavkcsFwndrbA" key="uuid" value="_TKBwsCTzEDSmqOt_ViVzmA"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>
