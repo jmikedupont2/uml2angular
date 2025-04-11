@@ -183,24 +183,34 @@ function getRootElement(content) {
 
 
 
-//   var fileContent = fs.readFileSync("/Users/fabian/Desktop/Projects/xmi2angular/xmi.xml", 'utf-8');
 
-//   function getRootElement(content) {
-//     var root;
-//     var parser = new xml2js.Parser();
-//     parser.parseString(content, function (err, result) {
-//       if (result.hasOwnProperty('uml:Model')) {
-//         root = result['uml:Model'];
-//       } else if (result.hasOwnProperty('xmi:XMI')) {
-//         root = result['xmi:XMI']['uml:Model'][0];
-//       } else {
-//         console.log("ERROOOOOOR")
-//       }
-//     });
-//     return root;
-//   }
+   function getRootElement(content) {
+    var root;
+    var parser = new xml2js.Parser();
+    parser.parseString(content, function (err, result) {
+      if (result.hasOwnProperty('uml:Model')) {
+        root = result['uml:Model'];
+      } else if (result.hasOwnProperty('xmi:XMI')) {
+        root = result['xmi:XMI']['uml:Model'][0];
+      } else {
+        console.log("ERROOOOOOR")
+      }
+    });
+    return root;
+  }
 
-//   var root = getRootElement(fileContent);
+  const fs = require('fs');
+var fileContent = fs.readFileSync("solfunmeme.xmi", 'utf-8');
+  var root = getRootElement(fileContent);
+
+  //console.log(root)
+
+  for (const element of root.packagedElement) {
+   // if (element.$.xmiType === "uml:Class") {
+      console.log(element.$)
+    //}
+  }
+
 
 //   var types = initDatabaseTypeHolder("sql");
 

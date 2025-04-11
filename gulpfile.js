@@ -3,7 +3,7 @@ var rename = require('gulp-rename');
 var xmi2angular = require('./');
 
 gulp.task('default', function() {
-	/*gulp.src('/Users/fabian/Desktop/Projects/xmi2angular/xmi.xml')
+	/*gulp.src('C:\Users\jmikedupont\Documents\GitHub\modelio-solfunmeme\XMI\solfunmeme.xmi')
     .pipe(xmi2angular())
     .pipe(gulp.dest('build/'));*/
     gulp.src('xml/*.xml')
